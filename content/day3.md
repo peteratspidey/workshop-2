@@ -55,6 +55,7 @@ python3 -m venv .venv
 
 ## activate the virtual environment
 ```bash
-
+source ~/myproject/.venv/bin/activate
+```
 
 
