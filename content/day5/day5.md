@@ -13,3 +13,12 @@ len("my_string")
 ```python
 string.replace("vivek", "peter")
 ```
+### indexing and slicing
+```python
+print(my_string[0])
+print(my_string[5])
+print(my_string[0:3])
+print(my_string[0:3:2])
+print(my_string[-1:-4])
+
+```
