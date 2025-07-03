@@ -1,4 +1,7 @@
 # installing the jupyter notebook 
+
+**option 1**
+
 ## install pip 
 
 ```bash
@@ -28,4 +31,30 @@ pip install jupyter
 jupyter notebook
 ``` 
 ## deactivate the virtual environment (optional)
+```bash
+deactivate
+```
+
+**option 2 - using python3**
+
+## create directory
+```bash
+mkdir myproject
+```
+## change the directory
+```bash
+cd myproject
+```
+## create a virtual environment
+
+```bash
+python3 -m venv .venv
+```
+> -m is module and the module name is venv from python3 library
+> .venv is the hidden directory for the virtual environment
+
+## activate the virtual environment
+```bash
+
+
 
