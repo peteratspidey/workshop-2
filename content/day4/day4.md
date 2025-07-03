@@ -1,8 +1,10 @@
 # basics of jupyter notebook inside the code file
 ## shortcuts
-`ctrl Enter` to execute a particular cell
+`ctrl Enter` to run the selected cells
 
-`shift Enter` execute a particular cell and add a new cell below
+`shift Enter` execute a particular cell and select the next cell
+
+`alt enter` runs the current cells and insert below and enter into the cell
 
 `esc and then m ` for markdown section
 
