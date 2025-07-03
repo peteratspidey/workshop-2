@@ -1,4 +1,4 @@
-# installing the jupyter notebook 
+# installing the jupyter notebook using external package virualenv
 
 **option 1**
 
@@ -35,7 +35,7 @@ jupyter notebook
 deactivate
 ```
 
-**option 2 - using python3**
+**option 2 - using in-built package venv**
 
 ## create directory
 ```bash
