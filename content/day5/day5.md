@@ -28,7 +28,7 @@ print("hello","world", "how", "are" ," you")
 print ("hello"+"vivek"+ "how" +"are"+ "you")
 ```
 
-### accessing the elemnts in the print statement
+### accessing the value of the variable in the print statement
 ```python
 value = 3.14
 print(" the value is :",value)
@@ -64,6 +64,12 @@ for i in my_new:
 for i in range(5):
     print(i)
 ```
-
+### to run a loop and put the output in a list
+```python
+ls= [x for x in range(5)]
+print(ls)
+ls =2 [x for x in my_new]
+print(ls2)
+```
 
 
