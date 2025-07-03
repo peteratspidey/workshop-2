@@ -68,7 +68,7 @@ for i in range(5):
 ```python
 ls= [x for x in range(5)]
 print(ls)
-ls =2 [x for x in my_new]
+ls2 = [x for x in my_new]
 print(ls2)
 ```
 
