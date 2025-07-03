@@ -70,6 +70,19 @@ ls= [x for x in range(5)]
 print(ls)
 ls2 = [x for x in my_new]
 print(ls2)
+ls3 = [i*i for i in range(5)]
+ls3
+```
+## dictionary
+- unordered set of key and values
+- key is the unique identifier for the value
+
+```python
+phone = {"vivek":9968791078,"jatin":9899588314, "yash":8860292541, "didi": 8130466185}
+print(phone)
+print(phone["yash"])
+phone.keys()
+phone.values()
 ```
 
 
