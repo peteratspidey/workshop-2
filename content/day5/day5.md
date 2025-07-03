@@ -1,8 +1,15 @@
 # python basics
-## len function
+## string data type
+### declare a string
 ```python
-len("string")
+my_string = "hello vivek"
 ```
-## replacing the string
+### check the type of the string
+### len function
 ```python
-string.replace
+len("my_string")
+```
+### replacing the string
+```python
+string.replace("vivek", "peter")
+```
