@@ -57,5 +57,10 @@ python3 -m venv .venv
 ```bash
 source ~/myproject/.venv/bin/activate
 ```
+## to deactivate the virtual environment
+```bash
+deactivate
+```
+
 
 
