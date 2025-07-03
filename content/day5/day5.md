@@ -19,6 +19,51 @@ print(my_string[0])
 print(my_string[5])
 print(my_string[0:3])
 print(my_string[0:3:2])
-print(my_string[-1:-4])
+print(my_string[-1:-4:-1])
 
 ```
+### concatenate the strings
+```python
+print("hello","world", "how", "are" ," you")
+print ("hello"+"vivek"+ "how" +"are"+ "you")
+```
+
+### accessing the elemnts in the print statement
+```python
+value = 3.14
+print(" the value is :",value)
+print("the value is : %.1f"  %value)
+print ("the value is : %.2f" %value)
+print ("the value is : %.3f" %value)
+```
+
+## list
+
+### create a list
+```python
+my_list =[ 225,335,445]
+print(my_list)
+print(my_list[0:2])
+
+```
+### create a empty list
+```python
+my_new = [] # create a empty list
+```
+### add values to the list
+```python
+my_new.append(667)
+my_new.append(668)
+my_new.append(669)
+print(my_new)
+```
+### for loop in my list
+```python
+for i in my_new:
+    print(i)
+for i in range(5):
+    print(i)
+```
+
+
+
