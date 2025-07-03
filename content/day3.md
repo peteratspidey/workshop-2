@@ -15,7 +15,8 @@ virtualenv my-jupyter-env
 ```
 
 ## activate the virtual environment
-```bash source my-jupyter-env/bin/activate
+```bash
+source my-jupyter-env/bin/activate
 ```
 ## install jupyter notebook
 ```bash
