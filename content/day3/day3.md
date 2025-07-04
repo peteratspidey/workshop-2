@@ -17,7 +17,7 @@ sudo apt install python3-virtualenv
 virtualenv my-jupyter-env
 ```
 
-## activate the virtual environment
+## activate the virtual environment ( in home directory)
 ```bash
 source my-jupyter-env/bin/activate
 ```
