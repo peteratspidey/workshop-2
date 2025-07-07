@@ -17,3 +17,6 @@ my_series = pd.Series([1,34,65,78,91])
 ```python 
 my_series = pd.Series([1,34,65,78,91], index= ['a','b', 'c', 'd', 'e'])
 ```
+## accesing elements via given index
+```python 
+my_series
