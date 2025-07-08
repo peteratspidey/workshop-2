@@ -40,4 +40,8 @@
 - FASTQC check the primers and adaptors details
 - then using trimmomatic we cut it out
 
+## Reference based genome assembly and variant calling
+[!image](content/day8/Screenshot from 2025-07-08 16-56-24.png)
+
+
    
