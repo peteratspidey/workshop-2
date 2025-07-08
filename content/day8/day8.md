@@ -41,7 +41,7 @@
 - then using trimmomatic we cut it out
 
 ## Reference based genome assembly and variant calling
-![flowchart](content/day8/Screenshot from 2025-07-08 16-56-24.png)
+![Screenshot](content/day8/Screenshot from 2025-07-08 16-56-24.png)
 
 
    
