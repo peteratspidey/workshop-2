@@ -21,7 +21,7 @@
       * `2104` - no within the flowcell lane
       * `15343` - X coordinate
       * `197393` - Y coordinate
-      * `1` - paired-end or mate-pair reads only
+      * `1` - paired-end or mate-pair reads onlytext
       * `Y` - Y when read is filtered (bad quality reads), else N (good quality reads)
       * `18` - even no , 0 when non of the control bits are on
       * `ATCGCC` - index sequence
@@ -41,7 +41,7 @@
 - then using trimmomatic we cut it out
 
 ## Reference based genome assembly and variant calling
-[!Alt text](content/day8/Screenshot from 2025-07-08 16-56-24.png)
+![flowchart](content/day8/Screenshot from 2025-07-08 16-56-24.png)
 
 
    
