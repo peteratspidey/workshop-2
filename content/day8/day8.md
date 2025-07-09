@@ -43,7 +43,19 @@
 ## Reference based genome assembly and variant calling
 ![Screenshot](flowchart.jpg)
 
-1. `BWA` or `bowtie`  align `Reference sequence` to  `NGS reads` and gives a SAM format file (sequence alignment map)
-2. then this `SAM` format is converted into `BAM` for computer understandable language. then into `sorted BAM`
-3. then we get the VCF ( a tab seperated file - tell position of chromosome where is the SNP present    
-   
+1.**align** - `BWA` or `bowtie`  align `Reference sequence` to  `NGS reads` and gives a SAM format file (sequence alignment map) and gives the SAM file
+```bash
+bwa mem reference.fasta reads.fastq > output.sam
+```
+2. **conversion** -  .then this `SAM` format is converted into `BAM` for computer understandable language. 
+```bash
+samtools view -S -b output.sam > output.bam
+```
+3. **sorting** - BAM file is sorted into `sorted BAM` by rearranging the reads according to the reference genome.
+```bash
+samtools sort output.bam -o sorted.bam
+```
+4. **indexing** -
+5. **summarize** - usign `mpileup` commmand of the sam tools for base call (assingment identity) at each position , pileup data creates `RAW .bcf` file 
+6.**view** - view from the bcftools convert the .bcf into .vcf file , listing all the variants(SNPs) .hence we get the VCF ( a tab seperated file - tell position of chromosome where is the SNP present )
+7. **filtering**- filtering low-quality or non-significant variants using BEDtools provides Final VCF file
