@@ -41,7 +41,7 @@
 - then using trimmomatic we cut it out
 
 ## Reference based genome assembly and variant calling
-![Screenshot](content/day8/flowchart.jpg)
+![Screenshot](flowchart.jpg)
 
 1. `BWA` or `bowtie`  align `Reference sequence` to  `NGS reads` and gives a SAM format file (sequence alignment map)
 2. then this `SAM` format is converted into `BAM` for computer understandable language. then into `sorted BAM`
