@@ -43,7 +43,7 @@
 ## Reference based genome assembly and variant calling
 ![Screenshot](flowchart.jpg)
 
-1.**align** - `BWA` or `bowtie`  align `Reference sequence` to  `NGS reads` and gives a SAM format file (sequence alignment map) and gives the SAM file
+1. **align** - `BWA` or `bowtie`  align `Reference sequence` to  `NGS reads` and gives a SAM format file (sequence alignment map) and gives the SAM file
 ```bash
 bwa mem reference.fasta reads.fastq > output.sam
 ```
