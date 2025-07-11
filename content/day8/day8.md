@@ -43,7 +43,7 @@
 ## Reference based genome assembly and variant calling
 ![Screenshot](flowchart.jpg)
 
-1. **align** - `BWA` or `bowtie`  align `Reference sequence` to  `NGS reads` and gives a SAM format file (sequence alignment map) and gives the SAM file
+1. **align** - `BWA` or `bowtie`  align `Reference sequence` to  `NGS reads` and gives a SAM format file (sequence alignment map).
 ```bash
 bwa mem reference.fasta reads.fastq > output.sam
 ```
@@ -59,3 +59,29 @@ samtools sort output.bam -o sorted.bam
 5. **summarize** - usign `mpileup` commmand of the sam tools for base call (assingment identity) at each position , pileup data creates `RAW .bcf` file 
 6.**view** - view from the bcftools convert the .bcf into .vcf file , listing all the variants(SNPs) .hence we get the VCF ( a tab seperated file - tell position of chromosome where is the SNP present )
 7. **filtering**- filtering low-quality or non-significant variants using BEDtools provides Final VCF file
+
+## GCC format
+> a plain text file format used to describe gene and other features of the DNA, RNA , protein seq in tab separated line format
+> each line has 9 columns
+  * `seqname`- name of the chromosome or scaffold
+      * Example: chr1, scaffold_23, NC_000001.11
+  * `source`- name of the program that generated this feature or data source
+      * Example: Ensembl, Augustus, GeneMark, maker
+  * `feature/type`- feature type e.g, gene, variation , similarity
+      * Example: gene, mRNA, exon, CDS, tRNA, repeat_region
+  * `start`- start position of the feature
+      * Example: 1050
+  * `end`- end position of the feature
+      * Example: 1250
+  * `score`- a floating point value
+      * Example: 0.98, 23.5, or . if not applicable
+  * `strand`- forward (+ve) and rever (-ve) 
+  * `frame/phase`-  Phase tells how many bases were leftover from the previous CDS (coding seq) that still need to be completed in next CDS to make a full codon (3 bases).
+| Phase | Meaning                                                                       |
+| ----- | ----------------------------------------------------------------------------- |
+| `0`   | No leftover → start codon cleanly here                                        |
+| `1`   | 2 bases leftover from previous CDS → take 1 base from current CDS to complete |
+| `2`   | 1 base leftover → take 2 bases from current CDS to complete                   |
+
+  * `atrribute`- It stores extra information about each feature (gene, CDS, exon, etc.). in key value form like gene id ,transcrpit id, name etc.
+      * ID=cds00001;Parent=transcript00001;gene_name=ABC1
