@@ -77,11 +77,13 @@ samtools sort output.bam -o sorted.bam
       * Example: 0.98, 23.5, or . if not applicable
   * `strand`- forward (+ve) and rever (-ve) 
   * `frame/phase`-  Phase tells how many bases were leftover from the previous CDS (coding seq) that still need to be completed in next CDS to make a full codon (3 bases).
+
 | Phase | Meaning                                                                       |
 | ----- | ----------------------------------------------------------------------------- |
 | `0`   | No leftover → start codon cleanly here                                        |
 | `1`   | 2 bases leftover from previous CDS → take 1 base from current CDS to complete |
 | `2`   | 1 base leftover → take 2 bases from current CDS to complete                   |
+
 
   * `atrribute`- It stores extra information about each feature (gene, CDS, exon, etc.). in key value form like gene id ,transcrpit id, name etc.
       * ID=cds00001;Parent=transcript00001;gene_name=ABC1
