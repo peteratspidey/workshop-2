@@ -104,4 +104,5 @@ samtools sort output.bam -o sorted.bam
 > a database of functional and structural motifs and domains
 > motifs describes as regular expression
 
-## 
+## steps to do
+### open the [uniprot](https://www.uniprot.org/) and search the protein
