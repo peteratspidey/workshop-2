@@ -60,7 +60,7 @@ samtools sort output.bam -o sorted.bam
 6.**view** - view from the bcftools convert the .bcf into .vcf file , listing all the variants(SNPs) .hence we get the VCF ( a tab seperated file - tell position of chromosome where is the SNP present )
 7. **filtering**- filtering low-quality or non-significant variants using BEDtools provides Final VCF file
 
-## GCC format
+## GFF/GTF format
 > a plain text file format used to describe gene and other features of the DNA, RNA , protein seq in tab separated line format
 > each line has 9 columns
   * `seqname`- name of the chromosome or scaffold
@@ -87,3 +87,5 @@ samtools sort output.bam -o sorted.bam
 
   * `atrribute`- It stores extra information about each feature (gene, CDS, exon, etc.). in key value form like gene id ,transcrpit id, name etc.
       * ID=cds00001;Parent=transcript00001;gene_name=ABC1
+
+##
