@@ -108,3 +108,7 @@ samtools sort output.bam -o sorted.bam
   - describes variablity in family arrangement
   
 ## prosite
+> a database of functional and structural motifs and domains
+> motifs describes as regular expression
+
+## 
