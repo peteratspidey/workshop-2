@@ -87,5 +87,24 @@ samtools sort output.bam -o sorted.bam
 
   * `atrribute`- It stores extra information about each feature (gene, CDS, exon, etc.). in key value form like gene id ,transcrpit id, name etc.
       * ID=cds00001;Parent=transcript00001;gene_name=ABC1
+* `motifs`- short conserved region in the protein
+* `domains` - large fucntional unit of protein
+* `profiles` - is the details of the protein tells
+              - conserved region
+              - varible region
+              - frequency of occurence of particular AA
+  
 
-##
+## need of studting protein domains
+> to classify the unknown protein on the basis of experimentally charachterised protein
+> automated methods to annotate protein families , domain , functional sites
+> predictive diagnostic models - using the info of charachterised protein to uncharaterised proteins
+
+## describing seq in protein family 
+* as a motif rule
+  - describes essential features of the protein
+  - catalytic residues , important structural residues
+* as a profile
+  - describes variablity in family arrangement
+  
+## prosite
