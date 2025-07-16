@@ -1,14 +1,4 @@
-# sequences databases and file formats
-## content to cover
-- FASTQ files (format for NGS)
-- QC reads before assebly process
-- Reference based Genome assembly (steps)
-- sequencing data and assembly file formats
-- other file formats : alignment , profiles
-
-## FASTA file format
-
-
+# sequence databases and file formats
 ## FASTQ file format
 - contains quality with sequence
 - contains four lines information
@@ -87,9 +77,12 @@ samtools sort output.bam -o sorted.bam
 
   * `atrribute`- It stores extra information about each feature (gene, CDS, exon, etc.). in key value form like gene id ,transcrpit id, name etc.
       * ID=cds00001;Parent=transcript00001;gene_name=ABC1
-* `motifs`- short conserved region in the protein
-* `domains` - large fucntional unit of protein
-* `profiles` - is the details of the protein tells
+### motifs
+> short conserved region in the protein
+### domains
+> large fucntional unit of protein
+### profiles
+> is the details of the protein tells
               - conserved region
               - varible region
               - frequency of occurence of particular AA
