@@ -108,4 +108,4 @@ samtools sort output.bam -o sorted.bam
 ### open the [uniprot](https://www.uniprot.org/) and search the protein
 1. look for the  `features`
 2. check the `binding sites` and `position` of the domain
-3. 
+3. f
