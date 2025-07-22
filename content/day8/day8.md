@@ -105,7 +105,46 @@ samtools sort output.bam -o sorted.bam
 > motifs describes as regular expression
 
 ## steps to do
-### open the [uniprot](https://www.uniprot.org/) and search the protein
-1. look for the  `features`
-2. check the `binding sites` and `position` of the domain
-3. f
+### open the [uniprot](https://www.uniprot.org/) and search the protein and select particular entry
+#### features
+- check the `binding sites` and `position` of the domain ,`description` and `sequence`
+#### keyword
+- molecular function (pathway in which it is involved
+- ligands 
+#### subcellular location 
+- location of the protein inside the cell
+#### family and domain
+- check for domains
+- check for view protein in `interpro` and `pfam` and open it
+#### interpro
+- scroll and check for `families` , `domains` and `conserved residue`
+- click on the given family and open it into new tab
+- choose `search selection with interProScan`
+- then click on search ( to find what are the domains in this protein )
+
+#### pfam
+- profile HMM
+    -  to check the mathematical expression about the AA occurence , which AA is most probably to occur
+- alignment
+    - choose the `seed` seq alignment ( seed is trusted sequence)
+    - by clicking on +/- change the view
+    - scroll left to right for wider view of the alignment
+- proteome
+    - search for `homo sapiens` and click on the matched proteins
+    - download the FASTA ,TSV ( curated seq of interested protein)
+    - filter by `reviewed` for experimentally validated entries
+    - direct all proteins or reviewed ones can be downloaded
+  #### NCBI
+  - open ncbi search for `genome`
+      - search E.coli/ arabidopsis or any other species of interest
+      - 1st link is `reference genome` select it
+      - then go for `view annotated genes`
+      - we can download genes as table
+      - check for `refseq sequence`
+           - for curated and validated by ncbi
+           - can download the genes as table
+      - check for `genbank sequence` 
+            - for sequence submittted by users
+#### omim ( describes specific mutation of gene of interest )
+-  search for a protein like `insulin`
+-  look for a entry
