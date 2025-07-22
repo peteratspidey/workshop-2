@@ -148,3 +148,7 @@ samtools sort output.bam -o sorted.bam
 #### omim ( describes specific mutation of gene of interest )
 -  search for a protein like `insulin`
 -  look for a entry
+    - check the `gene-phenotype relationships`
+    - check for the `coordinates`
+    - check for the `location`
+   
